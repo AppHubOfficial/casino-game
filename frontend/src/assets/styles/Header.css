@@ -1,31 +1,20 @@
+.backgroundImage {
+  position: fixed;
+  top: -12px;
+  left: -16px;
+  width: 104vw;
+  height: 104vh;
+  background-image: url('../images/chips_background.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+  z-index: -1;
+}
+
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #282c34;
-    padding: 10px 20px;
-  }
-  
-  .navbar-brand {
-    font-size: 24px;
-    color: white;
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar-link {
-    color: white;
-    text-decoration: none;
-    padding: 8px 15px;
-    transition: background-color 0.3s;
-  }
-  
-  .navbar-link:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-  }
-  
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row !important;
+  margin-top: 20px;
+}
