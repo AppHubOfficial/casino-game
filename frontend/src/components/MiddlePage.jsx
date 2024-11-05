@@ -1,12 +1,14 @@
 import React from 'react';
 import { Box, Typography, Stack, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';  
+import { useNavigate } from 'react-router-dom'; // Import useNavigate from React Router
 import '../assets/styles/MiddlePage.css';
 
 import RouletteImage from '../assets/images/roulette.jpg';
 
 import PokerIcon from '../assets/images/PokerIcon';
 import RouletteIcon from '../assets/images/RouletteIcon';
+import BlackjackIcon from '../assets/images/BlackjackIcon'
 
 const ItemIcon = styled(Paper)(({ theme }) => ({
   display: 'flex',
@@ -14,11 +16,18 @@ const ItemIcon = styled(Paper)(({ theme }) => ({
   alignItems: 'center',
   textAlign: 'center',
   boxShadow: 'none', 
-  width: '70px',
-  height: '90px'
+  width: '80px',
+  height: '100px',
+  cursor: 'pointer' // Add pointer cursor for icons
 }));
 
 const MiddlePage = () => {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleRedirect = (path) => {
+    navigate(path); // Use navigate to change the page
+  };
+
   return (
     <Box sx={{ py: 5 }} className="middlePageContainer" id="middleSection">
       <Typography variant="h3" gutterBottom>
@@ -29,15 +38,21 @@ const MiddlePage = () => {
       </Typography>
       <img src={RouletteImage} alt="Roulette" className="rouletteImage" />
 
-      <Stack direction="row" justifyContent="center" spacing={4} sx={{ mt: 5, position: 'relative', width: '170px', left: '10px' }}>
-        <ItemIcon>
+      <Stack direction="row" justifyContent="center" spacing={4} sx={{ mt: 5, position: 'relative', width: '170px', left: '65px' }}>
+        
+        <ItemIcon onClick={() => handleRedirect('/poker')}>
           <PokerIcon />
           <Typography variant="body1" sx={{ mt: 1 }}>Poker</Typography>
         </ItemIcon>
 
-        <ItemIcon>
-          <RouletteIcon style={{ width: '50px', transform: 'scale(1.8)', marginLeft: '6px', cursor: 'pointer' }}/>
+        <ItemIcon onClick={() => handleRedirect('/roulette')}>
+          <RouletteIcon style={{  transform: 'scale(1.8)', marginLeft: '6px' }}/>
           <Typography variant="body1" sx={{ mt: 1 }}>Roulette</Typography>
+        </ItemIcon>
+
+        <ItemIcon onClick={() => handleRedirect('/blackjack')}>
+          <BlackjackIcon style={{  transform: 'scale(1.8)', marginLeft: '6px' }}/>
+          <Typography variant="body1" sx={{ mt: 1 }}>Blackjack</Typography>
         </ItemIcon>
       </Stack>
     </Box>

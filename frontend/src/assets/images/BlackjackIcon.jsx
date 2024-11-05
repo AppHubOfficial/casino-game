@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const SvgIcon = (props) => (
+const BlackjackIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg83"
@@ -62,4 +62,4 @@ const SvgIcon = (props) => (
   </svg>
 );
 
-export default SvgIcon;
+export default BlackjackIcon;
