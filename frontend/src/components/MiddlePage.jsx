@@ -29,14 +29,14 @@ const MiddlePage = () => {
       </Typography>
       <img src={RouletteImage} alt="Roulette" className="rouletteImage" />
 
-      <Stack direction="row" justifyContent="center" spacing={4} sx={{ mt: 5 }}>
+      <Stack direction="row" justifyContent="center" spacing={4} sx={{ mt: 5, position: 'relative', width: '170px', left: '10px' }}>
         <ItemIcon>
           <PokerIcon />
           <Typography variant="body1" sx={{ mt: 1 }}>Poker</Typography>
         </ItemIcon>
 
         <ItemIcon>
-          <RouletteIcon style={{ width: '50px', transform: 'scale(1.25)', marginLeft: '6px', cursor: 'pointer' }}/>
+          <RouletteIcon style={{ width: '50px', transform: 'scale(1.8)', marginLeft: '6px', cursor: 'pointer' }}/>
           <Typography variant="body1" sx={{ mt: 1 }}>Roulette</Typography>
         </ItemIcon>
       </Stack>
