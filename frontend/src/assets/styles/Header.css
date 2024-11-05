@@ -1,3 +1,7 @@
+.headerContainer {
+  height: 100vh;
+}
+
 .backgroundImage {
   position: fixed;
   top: -12px;

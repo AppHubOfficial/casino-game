@@ -5,8 +5,7 @@ import { useTheme } from '@mui/material/styles';
 
 import '../assets/styles/Header.css';
 
-
-const Navbar = () => {
+const Header = ({ scrollToSection }) => {
   const theme = useTheme();
   return (
     <>
@@ -26,41 +25,46 @@ const Navbar = () => {
             color: 'white',
             marginTop: '200px',
             marginLeft: '50px'
-          }}>
+          }}
+        >
           <Typography
-            variant='h1'
+            component="span"
             sx={{
               color: theme.palette.primary.main,
               display: 'inline',
               fontWeight: 'bold',
-            }}>
-            99% {" "}
+            }}
+          >
+            99%{" "}
           </Typography>
-          of gamblers quit <br /> before they {" "}
+          of gamblers quit <br /> before they{" "}
           <Typography
-            variant='h1'
+            component="span"
             sx={{
               color: theme.palette.primary.main,
               display: 'inline',
               fontWeight: 'bold',
-            }}>
+            }}
+          >
             win big
-          </Typography><br />
+          </Typography>
+          <br />
 
-          <Button variant="outlined" sx={{
+          <Button
+            variant="outlined"
+            sx={{
               width: '160px',
               padding: '20px',
-              fontSize: '17px'
-            }}>PLAY NOW</Button>
-      </Typography>
-
-
-
-
-
-    </Box >
+              fontSize: '17px',
+            }}
+            onClick={() => scrollToSection('middleSection')}
+          >
+            PLAY NOW
+          </Button>
+        </Typography>
+      </Box>
     </>
   );
 };
 
-export default Navbar;
+export default Header;
