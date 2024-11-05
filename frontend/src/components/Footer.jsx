@@ -10,8 +10,8 @@ const Footer = () => {
       sx={{ 
         py: 5, 
         px: 2, 
-        backgroundColor: '#1E1E1E', // Darker background for modern look
-        color: '#F0F0F0' // Light text for contrast
+        backgroundColor: '#252525',
+        color: '#F0F0F0'
       }} 
       className="footer"
     >
