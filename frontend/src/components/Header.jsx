@@ -33,6 +33,7 @@ const Header = ({ scrollToSection }) => {
               color: theme.palette.primary.main,
               display: 'inline',
               fontWeight: 'bold',
+              fontSize: '92px',
             }}
           >
             99%{" "}
@@ -44,6 +45,7 @@ const Header = ({ scrollToSection }) => {
               color: theme.palette.primary.main,
               display: 'inline',
               fontWeight: 'bold',
+              fontSize: '92px',
             }}
           >
             win big

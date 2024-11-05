@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Header scrollToSection={scrollToSection}></Header>
-      <MiddlePage id = "middleSection"></MiddlePage>
+      <MiddlePage></MiddlePage>
     </>
   )
 }

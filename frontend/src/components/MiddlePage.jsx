@@ -10,7 +10,7 @@ import '../assets/styles/Header.css';
 const MiddlePage = () => {
 
   return (
-    <Box sx={{ py: 5 }} className="middlePageContainer">
+    <Box sx={{ py: 5 }} className="middlePageContainer" id = "middleSection">
       <Typography variant="h3" gutterBottom>
         Welcome to the Ultimate Casino Experience!
       </Typography>
