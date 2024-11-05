@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Stack, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';  
-import { useNavigate } from 'react-router-dom'; // Import useNavigate from React Router
+import { useNavigate } from 'react-router-dom';
 import '../assets/styles/MiddlePage.css';
 
 import RouletteImage from '../assets/images/roulette.jpg';
@@ -18,14 +18,14 @@ const ItemIcon = styled(Paper)(({ theme }) => ({
   boxShadow: 'none', 
   width: '80px',
   height: '100px',
-  cursor: 'pointer' // Add pointer cursor for icons
+  cursor: 'pointer'
 }));
 
 const MiddlePage = () => {
-  const navigate = useNavigate(); // Initialize useNavigate
+  const navigate = useNavigate();
 
   const handleRedirect = (path) => {
-    navigate(path); // Use navigate to change the page
+    navigate(path);
   };
 
   return (
