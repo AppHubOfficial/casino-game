@@ -22,3 +22,17 @@
   flex-direction: row !important;
   margin-top: 20px;
 }
+
+.headerTitle {
+  font-weight: bold !important;
+  font-style: italic;
+  color: white;
+  margin-top: 140px !important;
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 1120px) {
+  .headerTitle {
+    font-size: 4.5rem !important;
+  }
+}
