@@ -19,13 +19,7 @@ const Header = ({ scrollToSection }) => {
 
         <Typography
           variant='h1'
-          sx={{
-            fontWeight: 'bold',
-            fontStyle: 'italic',
-            color: 'white',
-            marginTop: '200px',
-            marginLeft: '50px'
-          }}
+          className="headerTitle"
         >
           <Typography
             component="span"
