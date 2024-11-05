@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import MiddlePage from '../components/MiddlePage';
+import Footer from '../components/Footer';
 
 const Home = () => {
   const scrollToSection = (id) => {
@@ -14,6 +15,7 @@ const Home = () => {
     <>
       <Header scrollToSection={scrollToSection}></Header>
       <MiddlePage></MiddlePage>
+      <Footer></Footer>
     </>
   )
 }
