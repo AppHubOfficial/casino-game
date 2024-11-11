@@ -3,7 +3,6 @@ import { Box, Typography, Stack, Paper } from '@mui/material';
 import { styled } from '@mui/material/styles';  
 import { useNavigate } from 'react-router-dom'; // Import useNavigate from React Router
 import '../assets/styles/MiddlePage.css';
-
 import RouletteImage from '../assets/images/roulette.jpg';
 
 import PokerIcon from '../assets/images/PokerIcon';
@@ -46,15 +45,18 @@ const MiddlePage = () => {
         </ItemIcon>
 
         <ItemIcon onClick={() => handleRedirect('/roulette')}>
-          <RouletteIcon style={{  transform: 'scale(1.8)', marginLeft: '6px' }}/>
+          <RouletteIcon style={{  transform: 'scale(1.8)', marginLeft: '6px'}}/>
           <Typography variant="body1" sx={{ mt: 1 }}>Roulette</Typography>
         </ItemIcon>
 
-        <ItemIcon onClick={() => handleRedirect('/blackjack')}>
-          <BlackjackIcon style={{  transform: 'scale(1.8)', marginLeft: '6px' }}/>
+        <ItemIcon onClick={() => handleRedirect('/blackjack')}> {/* Redirects to /blackjack */}
+          <BlackjackIcon style={{ transform: 'scale(1.8)', marginLeft: '6px' }}/>
           <Typography variant="body1" sx={{ mt: 1 }}>Blackjack</Typography>
         </ItemIcon>
+
+
       </Stack>
+    
     </Box>
   );
 };
