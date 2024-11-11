@@ -4,8 +4,8 @@ function PokerIcon(props) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
-      width={120}
-      height={120}
+      width={100}
+      height={100}
       viewBox="0 0 120 120"
       style={{ transform: 'scale(1.2)', cursor: 'pointer' }}
       {...props}

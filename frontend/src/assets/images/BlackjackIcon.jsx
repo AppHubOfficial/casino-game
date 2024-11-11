@@ -9,7 +9,6 @@ const BlackjackIcon = (props) => (
     preserveAspectRatio="xMidYMid meet"
     version="1"
     viewBox="0 0 600 600"
-    style={{width: '800px', height: '800px'}}
   >
     
     <rect
