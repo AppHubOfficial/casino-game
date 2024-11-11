@@ -1,6 +1,5 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Blackjack from './components/Blackjack';
 import Home from './pages/Home';
 import Page404 from './pages/Page404';
 import PokerPage from './pages/PokerPage';
@@ -13,8 +12,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/blackjack",  // Add this route for Blackjack
-    element: <Blackjack />,
+    path: "/blackjack",
+    element: <BlackjackPage />,
   },
   {
     path: "*",
