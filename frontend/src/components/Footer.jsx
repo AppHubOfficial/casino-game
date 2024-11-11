@@ -18,7 +18,7 @@ const Footer = () => {
       <footer>
         <Grid container spacing={2} alignItems="center">
           
-          <Grid 
+          <Grid
             item 
             xs={12} 
             sm={4} 
@@ -37,7 +37,7 @@ const Footer = () => {
             </Typography>
           </Grid>
           
-          <Grid 
+          <Grid
             item 
             xs={12} 
             sm={4} 

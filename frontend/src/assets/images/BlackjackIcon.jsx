@@ -4,12 +4,14 @@ const BlackjackIcon = (props) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     id="svg83"
-    width="800"
-    height="800"
+    width="80"
+    height="80"
     preserveAspectRatio="xMidYMid meet"
     version="1"
     viewBox="0 0 600 600"
+    style={{width: '800px', height: '800px'}}
   >
+    
     <rect
       id="rect1010"
       width="553.893"
