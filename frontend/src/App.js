@@ -16,6 +16,14 @@ const router = createBrowserRouter([
     element: <BlackjackPage />,
   },
   {
+    path: "/poker",
+    element: <PokerPage />,
+  },
+  {
+    path: "/roulette",
+    element: <RoulettePage />,
+  },
+  {
     path: "*",
     element: <Page404 />
   }
