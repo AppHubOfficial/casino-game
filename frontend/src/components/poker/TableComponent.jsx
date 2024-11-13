@@ -1,16 +1,9 @@
 import React from 'react';
-import { styled } from '@mui/material/styles';
-import { Box, Stack, Paper } from '@mui/material';
-import Grid from '@mui/material/Grid';
+import { Box, Stack } from '@mui/material';
 import PokerTable from '../../assets/images/poker/pokerTable.jsx';
+import '../../assets/styles/PokerTableComponent.css';
 
 const TableComponent = () => {
-
-  const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: '#fff',
-    textAlign: 'center',
-  }));
-  
   return (
     <Box
       sx={{
@@ -19,29 +12,26 @@ const TableComponent = () => {
         alignItems: 'center',
         justifyContent: 'center',
         height: '93vh',
-        gap: 3,
+        gap: 5,
         padding: '20px',
         position: 'relative',
       }}
     >
-      <PokerTable style={{ width: "87%", height: "auto", maxWidth: '1100px' }} />
+      <Stack direction="row" spacing={12} sx={{ top: '90px', position: 'absolute' }}>
+        <Box className="circle" />
+        <Box className="circle" />
+        <Box className="circle" />
+        <Box className="circle" />
+      </Stack>
 
-      <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
-        <Grid item xs={6}>
-          <Item>1</Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>2</Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>3</Item>
-        </Grid>
-        <Grid item xs={6}>
-          <Item>4</Item>
-        </Grid>
-      </Grid>
-      
-      
+      <PokerTable style={{ width: "87%", height: "auto", maxWidth: '1100px', marginTop: '90px' }} />
+
+      <Stack direction="row" spacing={12} sx={{ top: '750px', position: 'absolute' }}>
+        <Box className="circle" />
+        <Box className="circle" />
+        <Box className="circle" />
+        <Box className="circle" />
+      </Stack>
     </Box>
   );
 };

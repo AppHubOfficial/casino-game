@@ -1,5 +1,5 @@
 import * as React from "react"
-function PokerTable(props) {
+function SvgComponent(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -38,40 +38,47 @@ function PokerTable(props) {
         <g
           fill="#355426"
           stroke="none"
-          strokeWidth={30.776}
-          transform="translate(.17 -33.285)"
+          strokeWidth={45.4496}
+          transform="matrix(1 0 0 .95221 69.615 41.977)"
         >
           <rect
-            width={42.48175}
-            height={68.736916}
-            x={862.77368}
-            y={821.16791}
-            ry={8.1022196}
+            width={63.294655}
+            height={100.61456}
+            x={956.04712}
+            y={777.82086}
+            ry={11.859729}
           />
           <rect
-            width={42.48175}
-            height={68.736916}
-            x={1045.4014}
-            y={821.16791}
-            ry={8.1022196}
+            width={63.294655}
+            height={100.61456}
+            x={710.61176}
+            y={777.82086}
+            ry={11.859729}
           />
           <rect
-            width={42.48175}
-            height={68.736916}
-            x={984.52545}
-            y={821.16791}
-            ry={8.1022196}
+            width={63.294655}
+            height={100.61456}
+            x={792.42352}
+            y={777.82086}
+            ry={11.859729}
           />
           <rect
-            width={42.48175}
-            height={68.736916}
-            x={923.6496}
-            y={821.16791}
-            ry={8.1022196}
+            width={63.294655}
+            height={100.61456}
+            x={1037.8589}
+            y={777.82086}
+            ry={11.859729}
+          />
+          <rect
+            width={63.294655}
+            height={100.61456}
+            x={874.23529}
+            y={777.82086}
+            ry={11.859729}
           />
         </g>
       </g>
     </svg>
   )
 }
-export default PokerTable
+export default SvgComponent
