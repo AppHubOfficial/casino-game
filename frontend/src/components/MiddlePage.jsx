@@ -17,8 +17,13 @@ const ItemIcon = styled(Paper)(({ theme }) => ({
   boxShadow: 'none', 
   width: '80px',
   height: '100px',
-  cursor: 'pointer'
+  cursor: 'pointer',
+  transition: 'transform 0.3s ease',
+  '&:hover': {
+    transform: 'scale(1.2)',
+  },
 }));
+
 
 const MiddlePage = () => {
   const navigate = useNavigate();

@@ -12,27 +12,15 @@ const theme = createTheme({
       default: '#f5f5f5',
     },
   },
-//   typography: {
-//     fontFamily: 'Arial, sans-serif',
-//     h1: {
-//       fontSize: '2.5rem',
-//       fontWeight: 700,
-//     },
-//     body1: {
-//       fontSize: '1rem',
-//       color: '#333',
-//     },
-//   },
-//   components: {
-//     MuiButton: {
-//       styleOverrides: {
-//         root: {
-//           borderRadius: '8px',
-//           textTransform: 'none',
-//         },
-//       },
-//     },
-//   },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        body: {
+          backgroundColor: '#1b1b1b',
+        },
+      },
+    },
+  },
 });
 
 export default theme;
