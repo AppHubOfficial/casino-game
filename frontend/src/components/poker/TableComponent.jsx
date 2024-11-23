@@ -14,19 +14,25 @@ const TableComponent = () => {
         height: '93vh',
         gap: 5,
         padding: '20px',
-        position: 'relative',
       }}
     >
-      <Stack direction="row" spacing={12} sx={{ top: '90px', position: 'absolute' }}>
+      <Stack direction="row" spacing={{ xs: 2, sm: 4, md: 6, lg: 8, xl: 10 }}>
         <Box className="circle" />
         <Box className="circle" />
         <Box className="circle" />
         <Box className="circle" />
       </Stack>
 
-      <PokerTable style={{ width: "87%", height: "auto", maxWidth: '1100px', marginTop: '90px' }} />
+      <PokerTable
+        style={{
+          width: "87%",
+          height: "auto",
+          maxWidth: '900px',
+          marginBottom: '60px',
+        }}
+      />
 
-      <Stack direction="row" spacing={12} sx={{ top: '750px', position: 'absolute' }}>
+      <Stack direction="row" style={{ marginTop: '-100px' }} spacing={{ xs: 2, sm: 4, md: 6, lg: 8, xl: 10 }}>
         <Box className="circle" />
         <Box className="circle" />
         <Box className="circle" />
